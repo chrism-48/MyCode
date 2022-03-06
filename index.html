@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Light Switch</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+    <style>
+        #one {
+            color: rgb(255, 251, 0);
+            background-color: rgb(255, 251, 0);
+            text-align: center;
+            font-size: 320px;
+        }
+        
+        #two {
+            color: rgb(5, 5, 5);
+            background-color: rgb(5, 5, 5);
+            text-align: center;
+            font-size: 320px;
+        }
+        
+        #btn1 {
+            font-size: 20px;
+            display: flex float: left;
+        }
+        
+        #btn1:hover {
+            background-color: rgb(230, 223, 223);
+            border-style: solid;
+            border-color: rgba(0, 0, 0, 0.548);
+            border-width: .5px;
+            box-shadow: 1px 1px 11px rgba(0, 0, 0, 0.37);
+        }
+        
+        #btn2 {
+            font-size: 20px;
+        }
+        
+        #btn2:hover {
+            background-color: rgb(230, 223, 223);
+            border-style: solid;
+            border-color: rgba(0, 0, 0, 0.548);
+            border-width: .5px;
+            box-shadow: 1px 1px 11px rgba(0, 0, 0, 0.37);
+        }
+        
+        #switch {
+            font-size: 30px;
+            font-weight: 900;
+            display: flex float: left;
+            /*margin-left:300px;*/
+        }
+    </style>
+
+    <div id="one">Lights are on</div>
+    <br>
+    <div id="switch">Light Switch</div>
+
+    <button onclick="go()" id="btn1">off</button>
+    <button onclick="reset()" id="btn2">on</button>
+    <script>
+        var div = document.getElementById("one");
+
+        function go() {
+            div.setAttribute("id", "two");
+        }
+
+        function reset() {
+            div.setAttribute("id", "one");
+        }
+    </script>
+
+</body>
+
+</html>
+
+© 2022 GitHub, Inc. Terms Privacy Security Status Docs Contact GitHub Pricing API Training Blog About
